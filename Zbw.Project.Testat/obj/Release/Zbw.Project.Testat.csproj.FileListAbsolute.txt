@@ -27,3 +27,33 @@ C:\Users\schla\Desktop\ProgAdv_Testat\Zbw.Project.Testat\Zbw.Project.Testat\obj\
 C:\Users\schla\Desktop\ProgAdv_Testat\Zbw.Project.Testat\Zbw.Project.Testat\obj\Release\Zbw.Project.Testat.csproj.CopyComplete
 C:\Users\schla\Desktop\ProgAdv_Testat\Zbw.Project.Testat\Zbw.Project.Testat\obj\Release\Zbw.Project.Testat.dll
 C:\Users\schla\Desktop\ProgAdv_Testat\Zbw.Project.Testat\Zbw.Project.Testat\obj\Release\Zbw.Project.Testat.pdb
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\Zbw.Project.Testat.dll
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\Zbw.Project.Testat.pdb
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\BouncyCastle.Crypto.dll
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\CommonServiceLocator.dll
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\Google.Protobuf.dll
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\MySql.Data.dll
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\Prism.dll
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\Prism.Wpf.dll
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\Renci.SshNet.dll
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\System.ValueTuple.dll
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\System.Windows.Interactivity.dll
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\Google.Protobuf.xml
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\MySql.Data.xml
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\Prism.pdb
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\Prism.xml
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\Prism.Wpf.pdb
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\Prism.Wpf.xml
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\Renci.SshNet.xml
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Release\System.ValueTuple.xml
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\obj\Release\Zbw.Project.Testat.csprojAssemblyReference.cache
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\obj\Release\View\LogEntryView.g.cs
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\obj\Release\Zbw.Project.Testat_MarkupCompile.cache
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\obj\Release\Zbw.Project.Testat_MarkupCompile.lref
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\obj\Release\View\LogEntryView.baml
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\obj\Release\Zbw.Project.Testat.g.resources
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\obj\Release\Zbw.Project.Testat.Properties.Resources.resources
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\obj\Release\Zbw.Project.Testat.csproj.GenerateResource.cache
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\obj\Release\Zbw.Project.Testat.csproj.CopyComplete
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\obj\Release\Zbw.Project.Testat.dll
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\obj\Release\Zbw.Project.Testat.pdb

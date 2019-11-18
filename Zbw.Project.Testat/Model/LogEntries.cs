@@ -11,11 +11,9 @@ namespace Zbw.Project.Testat
         public int Severity { get; set; }
         public DateTime DateTime { get; set; }
         public string Message { get; set; }
-
         public LogEntries()
         {
         }
-
         protected LogEntries(
             int id,
             string pod,
