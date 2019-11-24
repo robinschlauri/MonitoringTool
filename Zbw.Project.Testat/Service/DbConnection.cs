@@ -40,11 +40,11 @@ namespace Zbw.Project.Testat.Service
 
                     _logEntries.Add(logEntries);
                 }
-
                 reader.Close();
                 _connection.Close();
             }
-            catch (Exception e)
+
+            catch (Exception)
             {
                 _connection.Close();
                 MessageBox.Show("Der Connection String den Sie eingegeben haben ist falsch!\nVersuchen Sie es erneut!",
@@ -71,7 +71,7 @@ namespace Zbw.Project.Testat.Service
                     MessageBox.Show("Der Eintrag wurde gelöscht", "Erfolgreich ausgeführt");
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 _connection.Close();
                 MessageBox.Show("Der Eintrag konnte nicht gelöscht werden", "Kein Eintrag gelöscht",
@@ -93,12 +93,13 @@ namespace Zbw.Project.Testat.Service
                 _connection.Close();
                 MessageBox.Show("Der Eintrag wurde hinzugefügt ", "Hinzugefügt");
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 _connection.Close();
-                MessageBox.Show("Der Eintrag konnte nicht hinzugefügt werden", "Kein Eintrag hinzugefügt",
+                MessageBox.Show("Überprüfen Sie die Eingabe", "Kein Eintrag hinzugefügt",
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
+
 }

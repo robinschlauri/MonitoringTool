@@ -14,22 +14,5 @@ namespace Zbw.Project.Testat
         public LogEntries()
         {
         }
-        protected LogEntries(
-            int id,
-            string pod,
-            string location,
-            string hostname,
-            int severity,
-            DateTime datetime,
-            string message)
-        {
-            this.Id = id;
-            this.Pod = pod;
-            this.Location = location;
-            this.Hostname = hostname;
-            this.Severity = severity;
-            this.DateTime = datetime;
-            this.Message = message;
-        }
     }
 }

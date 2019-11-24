@@ -20,27 +20,27 @@
                   AutoGenerateColumns="False"
                   HorizontalAlignment="Left" Height="294" Margin="25,102,0,0" VerticalAlignment="Top" Width="800" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="30"/>
-                <DataGridTextColumn Header="PoD" Binding="{Binding Pod}" Width="*"/>
-                <DataGridTextColumn Header="Location" Binding="{Binding Location}" Width="*"/>
-                <DataGridTextColumn Header="Hostname" Binding="{Binding Hostname}" Width="*"/>
-                <DataGridTextColumn Header="Severity" Binding="{Binding Severity}" Width="*"/>
-                <DataGridTextColumn Header="DateTime" Binding="{Binding DateTime}" Width="*"/>
-                <DataGridTextColumn Header="Message" Binding="{Binding Message}" Width="250"/>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" IsReadOnly="True" Width="30"/>
+                <DataGridTextColumn Header="PoD" Binding="{Binding Pod}" IsReadOnly="True" Width="*"/>
+                <DataGridTextColumn Header="Location" Binding="{Binding Location}" IsReadOnly="True" Width="*"/>
+                <DataGridTextColumn Header="Hostname" Binding="{Binding Hostname}" IsReadOnly="True" Width="*"/>
+                <DataGridTextColumn Header="Severity" Binding="{Binding Severity}" IsReadOnly="True" Width="*"/>
+                <DataGridTextColumn Header="DateTime" Binding="{Binding DateTime}" IsReadOnly="True" Width="*"/>
+                <DataGridTextColumn Header="Message" Binding="{Binding Message}" IsReadOnly="True" Width="250"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Confirm" HorizontalAlignment="Left" Margin="25,401,0,0" VerticalAlignment="Top" Width="75" Command="{Binding CmdConfirm}"/>
+        <Button Content="Confirm" Name="Btn_Confirm" HorizontalAlignment="Left" Margin="25,401,0,0" VerticalAlignment="Top" Width="75" Command="{Binding CmdConfirm}"/>
         <TextBox HorizontalAlignment="Left" Height="20" Margin="146,30,0,0" TextWrapping="Wrap" Text="{Binding ConnectionString, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="679" UndoLimit="150" Grid.ColumnSpan="2"/>
         <Label Content="Select a Logentry to confirm:" HorizontalAlignment="Left" Margin="25,76,0,0" VerticalAlignment="Top" Width="172" FontWeight="Bold" Grid.ColumnSpan="2"/>
         <Label Content="Insert a new Logentry:" HorizontalAlignment="Left" Margin="25,433,0,0" VerticalAlignment="Top" Width="159" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Label Content="PoD" HorizontalAlignment="Left" Margin="25,451,0,0" VerticalAlignment="Top" Width="150" Grid.ColumnSpan="2"/>
-        <Label Content="Hostname:" HorizontalAlignment="Left" Margin="199,451,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
-        <Label Content="Severity:" HorizontalAlignment="Left" Margin="364,451,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
-        <Label Content="Message:" HorizontalAlignment="Left" Margin="454,451,0,0" VerticalAlignment="Top" Width="217" Grid.Column="1"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="25,477,0,0" TextWrapping="Wrap" Text="{Binding Pod, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="150" UndoLimit="150" Grid.ColumnSpan="2"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="199,477,0,0" TextWrapping="Wrap" Text="{Binding Hostname, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="150" UndoLimit="150" Grid.Column="1"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="364,477,0,0" TextWrapping="Wrap" Text="{Binding Severity, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="75" UndoLimit="150" Grid.Column="1"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="454,477,0,0" TextWrapping="Wrap" Text="{Binding Message, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="217" UndoLimit="150" Grid.Column="1"/>
+        <Label Content="PoD" HorizontalAlignment="Left" Margin="25,451,0,0" VerticalAlignment="Top" Width="159" Grid.ColumnSpan="2"/>
+        <Label Content="Hostname:" HorizontalAlignment="Left" Margin="53,451,0,0" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
+        <Label Content="Severity:" HorizontalAlignment="Left" Margin="235,451,0,0" VerticalAlignment="Top" Width="90" Grid.Column="1"/>
+        <Label Content="Message:" HorizontalAlignment="Left" Margin="421,451,0,0" VerticalAlignment="Top" Width="250" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="24,477,0,0" TextWrapping="Wrap" Text="{Binding Pod, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="160" UndoLimit="150" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="53,477,0,0" TextWrapping="Wrap" Text="{Binding Hostname, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="160" UndoLimit="150" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="235,477,0,0" TextWrapping="Wrap" Text="{Binding Severity, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="160" UndoLimit="150" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="421,477,0,0" TextWrapping="Wrap" Text="{Binding Message, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="250" UndoLimit="150" Grid.Column="1"/>
         <Button Content="Add" HorizontalAlignment="Left" Margin="25,502,0,0" VerticalAlignment="Top" Width="75" Command="{Binding CmdAdd, Mode=OneWay}"/>
-    </Grid>
+        </Grid>
 </UserControl>
