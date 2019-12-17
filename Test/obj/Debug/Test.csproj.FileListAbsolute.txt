@@ -57,3 +57,6 @@ C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Test\obj\Debug\Test.csproj.G
 C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Test\obj\Debug\Test.csproj.CopyComplete
 C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Test\obj\Debug\Test.exe
 C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Test\obj\Debug\Test.pdb
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Test\bin\Debug\DuplicateCheckerLib.dll
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Test\bin\Debug\Zbw.Project.Testat.dll.config
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Test\bin\Debug\Google.Protobuf.pdb

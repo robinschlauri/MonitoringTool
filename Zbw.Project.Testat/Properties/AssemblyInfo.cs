@@ -6,8 +6,8 @@ using System.Windows;
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die einer Assembly zugeordnet sind.
 [assembly: AssemblyTitle("Zbw.Project.Testat")]
-[assembly: AssemblyDescription("RobinTestat")]
-[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyDescription("RobinTestat_1")]
+[assembly: AssemblyConfiguration("Komplett")]
 [assembly: AssemblyCompany("Schlauri")]
 [assembly: AssemblyProduct("Zbw.Project.Testat")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
@@ -49,5 +49,5 @@ using System.Windows;
 // Sie können alle Werte angeben oder Standardwerte für die Build- und Revisionsnummern verwenden,
 // indem Sie "*" wie unten gezeigt eingeben:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.1.0")]
-[assembly: AssemblyFileVersion("1.0.1.0")]
+[assembly: AssemblyVersion("2.0.0.0")]
+[assembly: AssemblyFileVersion("2.0.0.0")]

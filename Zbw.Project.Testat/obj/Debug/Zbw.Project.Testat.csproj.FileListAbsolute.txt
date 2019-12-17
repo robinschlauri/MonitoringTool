@@ -59,3 +59,8 @@ C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\obj\Debug
 C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\obj\Debug\Zbw.Project.Testat.csproj.CopyComplete
 C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\obj\Debug\Zbw.Project.Testat.dll
 C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\obj\Debug\Zbw.Project.Testat.pdb
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Debug\Zbw.Project.Testat.dll.config
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Debug\DuplicateCheckerLib.dll
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Debug\NuGet.Frameworks.dll
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Debug\Google.Protobuf.pdb
+C:\Users\Robin Schlauri\Desktop\MonitoringToolRobin\Zbw.Project.Testat\bin\Debug\NuGet.Frameworks.xml

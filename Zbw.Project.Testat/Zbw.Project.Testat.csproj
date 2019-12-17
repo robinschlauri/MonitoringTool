@@ -38,6 +38,10 @@
     <Reference Include="CommonServiceLocator, Version=2.0.5.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
       <HintPath>..\packages\CommonServiceLocator.2.0.5\lib\net47\CommonServiceLocator.dll</HintPath>
     </Reference>
+    <Reference Include="DuplicateCheckerLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\DuplicateCheckerLib.dll</HintPath>
+    </Reference>
     <Reference Include="Google.Protobuf, Version=3.10.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.10.1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
@@ -86,7 +90,8 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Service\DbConnection.cs" />
+    <Compile Include="Repository\DbConnection.cs" />
+    <Compile Include="Repository\IRepositoryBase.cs" />
     <Compile Include="Model\LogEntries.cs" />
     <Page Include="View\LogEntryView.xaml">
       <Generator>MSBuild:Compile</Generator>

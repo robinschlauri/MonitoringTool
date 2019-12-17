@@ -2,7 +2,9 @@
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows;
+using DuplicateCheckerLib;
 using Zbw.Project.Testat.Service;
 using Zbw.Project.Testat.View;
 
@@ -21,14 +23,15 @@ namespace Zbw.Project.Testat.ViewModel
         {
             CmdLoad = new DelegateCommand(OnCmdLoad);
             CmdConfirm = new DelegateCommand(OnCmdConfirmLogEntry);
-            //CmdConfirm.IsEnabled
             CmdAdd = new DelegateCommand(OnCmdAdd);
+            CmdFindDuplicates = new DelegateCommand(OnCmdFindDuplicates);
             _dbConnection = new DbConnection();
         }
 
         public DelegateCommand CmdLoad { get; }
         public DelegateCommand CmdConfirm { get; }
         public DelegateCommand CmdAdd { get; }
+        public DelegateCommand CmdFindDuplicates { get; }
 
         private void OnCmdLoad()
         {
@@ -50,7 +53,6 @@ namespace Zbw.Project.Testat.ViewModel
 
         }
 
-
         private void OnCmdAdd()
         {
             try
@@ -63,7 +65,21 @@ namespace Zbw.Project.Testat.ViewModel
                 MessageBox.Show("Wählen Sie einen Eintrag aus", "Kein Eintrag ausgewählt",
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
 
+        private void OnCmdFindDuplicates()
+        {
+            try
+            {
+                var dupliChecker = new DuplicateChecker();
+                var dupliList = dupliChecker.FindDuplicates(GetLogEntries).ToList();
+                MessageBox.Show("Gefundene Duplikate: " + dupliList.Count.ToString(), "Duplikate");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Es sind keine Daten vorhanden", "Keine Daten vorhanden, zersch Date lade du tubel",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         public LogEntries SelectedLogEntry { get; set; }
@@ -84,6 +100,5 @@ namespace Zbw.Project.Testat.ViewModel
             get { return _logEntries; }
             set { SetProperty(ref _logEntries, value); }
         }
-
     }
 }

@@ -42,5 +42,6 @@
         <TextBox HorizontalAlignment="Left" Height="20" Margin="235,477,0,0" TextWrapping="Wrap" Text="{Binding Severity, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="160" UndoLimit="150" Grid.Column="1"/>
         <TextBox HorizontalAlignment="Left" Height="20" Margin="421,477,0,0" TextWrapping="Wrap" Text="{Binding Message, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="250" UndoLimit="150" Grid.Column="1"/>
         <Button Content="Add" HorizontalAlignment="Left" Margin="25,502,0,0" VerticalAlignment="Top" Width="75" Command="{Binding CmdAdd, Mode=OneWay}"/>
+        <Button Content="Find Duplicates" HorizontalAlignment="Left" Margin="115,401,0,0" VerticalAlignment="Top" Width="100" Command="{Binding CmdFindDuplicates, Mode=OneWay}" Grid.ColumnSpan="2"/>
         </Grid>
 </UserControl>
