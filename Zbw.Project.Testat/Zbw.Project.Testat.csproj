@@ -92,11 +92,12 @@
   <ItemGroup>
     <Compile Include="Repository\DbConnection.cs" />
     <Compile Include="Repository\IRepositoryBase.cs" />
-    <Compile Include="Model\LogEntries.cs" />
+    <Compile Include="Model\LogEntry.cs" />
     <Page Include="View\LogEntryView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="Repository\LogEntriesRepository.cs" />
     <Compile Include="Repository\RepositoryBase.cs" />
     <Compile Include="ViewModel\LogEntryViewModel.cs" />
     <Compile Include="View\LogEntryView.xaml.cs">

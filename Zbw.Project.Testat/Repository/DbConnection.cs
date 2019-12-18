@@ -13,10 +13,10 @@ namespace Zbw.Project.Testat.Service
     public class DbConnection : BindableBase
     {
         
-        private List<LogEntries> _logEntries;
+        private List<LogEntry> _logEntries;
         private IDbConnection _connection;
-
-        public List<LogEntries> GetLogData(string connectionstring, string query)
+        /*
+        public List<LogEntry> GetLogData(string connectionstring, string query)
         {
             _connection = new MySqlConnection(connectionstring);
             try
@@ -27,11 +27,11 @@ namespace Zbw.Project.Testat.Service
                 command.CommandText = query;
 
                 IDataReader reader = command.ExecuteReader();
-                _logEntries = new List<LogEntries>();
+                _logEntries = new List<LogEntry>();
 
                 while (reader.Read())
                 {
-                    var logEntries = new LogEntries
+                    var logEntries = new LogEntry
                     {
                         Id = reader.GetInt32(0),
                         Pod = reader.GetString(1),
@@ -57,6 +57,7 @@ namespace Zbw.Project.Testat.Service
 
             return _logEntries;
         }
+        */
 
         public void ConfirmLogEntry(string connectionstring, string query)
         {
