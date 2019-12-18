@@ -97,6 +97,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="Repository\RepositoryBase.cs" />
     <Compile Include="ViewModel\LogEntryViewModel.cs" />
     <Compile Include="View\LogEntryView.xaml.cs">
       <DependentUpon>LogEntryView.xaml</DependentUpon>

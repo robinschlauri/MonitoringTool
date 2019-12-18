@@ -10,8 +10,9 @@ using Zbw.Project.Testat.DataAccess.Repository;
 
 namespace Zbw.Project.Testat.Service
 {
-    public class DbConnection : IRepositoryBase<T> where T : BindableBase, new()
+    public class DbConnection : BindableBase
     {
+        
         private List<LogEntries> _logEntries;
         private IDbConnection _connection;
 
