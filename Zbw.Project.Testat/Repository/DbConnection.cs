@@ -13,7 +13,7 @@ namespace Zbw.Project.Testat.Service
     public class DbConnection : BindableBase
     {
         
-        private List<LogEntry> _logEntries;
+        //private List<LogEntry> _logEntries;
         private IDbConnection _connection;
         /*
         public List<LogEntry> GetLogData(string connectionstring, string query)

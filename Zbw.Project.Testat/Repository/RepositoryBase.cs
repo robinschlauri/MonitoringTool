@@ -2,35 +2,27 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using Zbw.Project.Testat.DataAccess.Repository;
 
 namespace Zbw.Project.Testat.Repository
 {
     public abstract class RepositoryBase<M> : IRepositoryBase<M>
     {
-        /* protected RepositoryBase()
-         {
-                 public static string CONNECTION_STRING_1
-             {
-                 get
-                 {
-                     return ConfigurationManager.ConnectionStrings["Conn1"].ConnectionString;
-                 }
-             }
 
-         SqlConnection conn = new SqlConnection(Configuration.CONNECTION_STRING_1());
-         */
-
-        public string connectionString = "Server=localhost;Port=3306;Database=inventarisierung;Uid=root;Pwd=....;";
-
+        public string connectionString = "Server=localhost;Port=3306;Database=inventarisierung;Uid=root;Pwd=maragia88;";
+        private IDbConnection _connection;
 
         public abstract string TableName { get; }
 
-         public long Count()
+        public abstract List<M> GetAll();
+
+        public long Count()
         {
             using (var conn = new MySqlConnection(this.connectionString))
             {
@@ -46,7 +38,7 @@ namespace Zbw.Project.Testat.Repository
         public void Add(String query)
         {
             {
-                _connection = new MySqlConnection(connectionstring);
+                _connection = new MySqlConnection(this.connectionString);
                 try
                 {
                     _connection.Open();
@@ -71,7 +63,7 @@ namespace Zbw.Project.Testat.Repository
         public abstract long Count(string whereCondition, Dictionary<string, object> parameterValues);
         public abstract void Delete(M entity);
         public abstract List<M> GetAll(string whereCondition, Dictionary<string, object> parameterValues);
-        public abstract List<M> GetAll();
+
         public abstract M GetSingle<P>(P pkValue);
         public abstract IQueryable<M> Query(string whereCondition, Dictionary<string, object> parameterValues);
         public abstract void Update(M entity);

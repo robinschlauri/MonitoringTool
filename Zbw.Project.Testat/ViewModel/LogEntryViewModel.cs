@@ -18,8 +18,8 @@ namespace Zbw.Project.Testat.ViewModel
         // private DbConnection _dbConnection;
         private List<LogEntry> _logEntries;
         // private string _connectionstring = "Server=localhost;Port=3306;Database=inventarisierung;Uid=root;Pwd=....;";
-        private string _getLogDataCommand = "SELECT id, pod, location, hostname, severity, timestamp, message FROM v_logentries";
-        private string _confirmLogEntry = "CALL `inventarisierung`.`LogClear`({0})";
+        //private string _getLogDataCommand = "SELECT id, pod, location, hostname, severity, timestamp, message FROM v_logentries";
+        //private string _confirmLogEntry = "CALL `inventarisierung`.`LogClear`({0})";
         //private String _addLogEntry = "CALL `inventarisierung`.`LogMessageAdd`('{0}', '{1}', {2}, '{3}')";
 
         public LogEntryViewModel(LogEntryView logEntryView)
@@ -46,7 +46,7 @@ namespace Zbw.Project.Testat.ViewModel
         {
             try
             {
-                _dbConnection.ConfirmLogEntry(_connectionstring, string.Format(_confirmLogEntry, SelectedLogEntry.Id));
+                //_dbConnection.ConfirmLogEntry(_connectionstring, string.Format(_confirmLogEntry, SelectedLogEntry.Id));
                 OnCmdLoad();
             }
             catch (Exception)
@@ -90,7 +90,7 @@ namespace Zbw.Project.Testat.ViewModel
         public LogEntry SelectedLogEntry { get; set; }
         public string Pod { get; set; }
         public string Hostname { get; set; }
-        public string Severity { get; set; }
+        public int Severity { get; set; }
         public string Message { get; set; }
 
 /*

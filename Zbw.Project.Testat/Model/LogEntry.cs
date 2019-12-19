@@ -13,26 +13,25 @@ namespace Zbw.Project.Testat
         public DateTime DateTime { get; set; }
         public string Message { get; set; }
 
-        public LogEntry(string Pod, string Hostname, int Severity, string Message)
+        protected LogEntry(string Pod, string Hostname, int Severity, string Message)
         {
             this.Pod = Pod;
             this.Hostname = Hostname;
             this.Severity = Severity;
             this.Message = Message;
-
         }
 
-        public LogEntry(string Pod, string Hostname, int Severity, string Message)
+        public LogEntry(int Id, string Pod, string Location, string Hostname, int Severity, DateTime DateTime, string Message)
         {
+            this.Id = Id;
             this.Pod = Pod;
+            this.Location = Location;
             this.Hostname = Hostname;
             this.Severity = Severity;
+            this.DateTime = DateTime;
             this.Message = Message;
-            this.Message = Message;
-            this.Message = Message;
-
         }
-
+        
         public override int GetHashCode()
         {
             unchecked

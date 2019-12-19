@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Linq;
 using System.Text;
@@ -11,36 +12,14 @@ namespace Zbw.Project.Testat.Repository
 {
     class LogEntriesRepository : RepositoryBase<LogEntry>
     {
+        new string connectionString = ConfigurationManager.ConnectionStrings["Conn1"].ConnectionString;
+
         public override string TableName => "v_logentries";
-
-        public override void Add(LogEntry entity)
-        {
-            // "CALL `inventarisierung`.`LogMessageAdd`('{0}', '{1}', {2}, '{3}')"
-            Add(string.Format("CALL `inventarisierung`.`LogMessageAdd`('{0}', '{1}', {2}, '{3}')", 
-                entity.Pod, entity.Hostname, entity.Severity, entity.Message));
-            throw new NotImplementedException();
-        }
-
-        public override long Count(string whereCondition, Dictionary<string, object> parameterValues)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Delete(LogEntry entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override List<LogEntry> GetAll(string whereCondition, Dictionary<string, object> parameterValues)
-        {
-            throw new NotImplementedException();
-        }
 
         public  LogEntry readDBRecord(IDataReader reader)
         {
             LogEntry logEntry = new LogEntry
             {
-
                 Id = reader.GetInt32(0),
                 Pod = reader.GetString(1),
                 Location = reader.GetString(2),
@@ -50,7 +29,7 @@ namespace Zbw.Project.Testat.Repository
                 Message = reader.GetString(6)
             };
             return logEntry;
-    }
+        }
 
         public override List<LogEntry> GetAll()
         {
@@ -62,7 +41,7 @@ namespace Zbw.Project.Testat.Repository
                     _connection.Open();
 
                     var command = _connection.CreateCommand();
-                    command.CommandText = "select * from " + TableName;
+                    command.CommandText = "SELECT id, pod, location, hostname, severity, timestamp, message FROM" + TableName;
 
                     IDataReader reader = command.ExecuteReader();
 
@@ -85,6 +64,43 @@ namespace Zbw.Project.Testat.Repository
 
                 return _logEntries;
             }
+        }
+
+        public override void Add(LogEntry entity)
+        {
+            // "CALL `inventarisierung`.`LogMessageAdd`('{0}', '{1}', {2}, '{3}')"
+            Add(string.Format("CALL `inventarisierung`.`LogMessageAdd`('{0}', '{1}', {2}, '{3}')",
+                entity.Pod, entity.Hostname, entity.Severity, entity.Message));
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        public override long Count(string whereCondition, Dictionary<string, object> parameterValues)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Delete(LogEntry entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override List<LogEntry> GetAll(string whereCondition, Dictionary<string, object> parameterValues)
+        {
+            throw new NotImplementedException();
         }
 
         public override LogEntry GetSingle<P>(P pkValue)
